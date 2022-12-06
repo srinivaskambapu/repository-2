@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VALUEPOINT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+<style>
+*{margin: 0%;
+        padding: 0%;
+        font-family: sans-serif;}
+body{background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(/IMAGES/Background.jpeg);
+        width: 100%;
+        height: 100%;
+        background-size: cover;}
+h4{background-color: rgb(255, 255, 255);
+    width: fit-content;}
+.logo{width: 20%;
+          cursor: pointer;
+    }
+.navbar{width: 85%;
+            margin: auto;
+            padding: 35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    }
+.navbar ul li{list-style: none;
+                  display: inline;
+                  margin: 0 20px;
+                  position: relative;
+    }
+.navbar ul li a{text-decoration: none;
+                    color: whitesmoke;
+                    text-transform: uppercase;}
+.navbar a:active {
+  color: blue;
+}
+.navbar ul li::after{content: '';
+                 height: 3px;
+                 width: 0%;
+                 background-color: lightblue ;
+                 position: absolute;
+                 left: 0;
+                 bottom: -4px;
+                 transition: 0.6s ;
+    }
+.navbar ul li:hover:after{
+        width: 100%;
+    }
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: whitesmoke;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: lightblue}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: lightblue;
+}
+.content1 h1{color: white;}
+.content1 button{width: 70px;
+color: black;
+font-size: 10px;
+padding: 5px;
+background: skyblue;
+border: 0cm;
+border-radius: 20px;
+outline: none;
+margin-top: 10px;
+cursor: pointer;
+}
+.card1{width: 320px;
+height: 220px;
+display: inline-block;
+border-radius: 10px;
+padding: 15px 25px;
+box-sizing: border-box;
+cursor: pointer;
+background-size: contain;
+background-image: url(/IMAGES/);
+background-repeat: no-repeat;
+margin-left: auto;
+margin-right: auto;
+
+}
+.card1 a{text-decoration: none;
+        color: black;}
+.card2{width: 320px;
+height: 220px;
+display: inline-block;
+border-radius: 10px;
+padding: 5px 25px;
+box-sizing: border-box;
+background-size: contain;
+cursor: pointer;
+margin: 10px 15px;
+background-image: url(laptop.jpeg);
+background-repeat: no-repeat;
+}
+.card2 a{text-decoration: none;
+        color: black;}
+.card3{width: 320px;
+height: 220px;
+display: inline-block;
+border-radius: 10px;
+padding: 4px 25px;
+box-sizing: border-box;
+background-size: contain;
+cursor: pointer;
+margin: 10px 15px;
+background-image: url(tv.jpeg) ;
+background-repeat: no-repeat;
+}
+.card3 a{text-decoration: none;
+        color: black;}
+.card7{width: 320px;
+height: 220px;
+display: inline-block;
+border-radius: 10px;
+background-size: contain;
+padding: 4px 25px;
+box-sizing: border-box;
+cursor: pointer;
+margin: 10px 15px;
+background-image: url(headphones.jpeg) ;
+background-repeat: no-repeat;
+}
+.card7 a{text-decoration: none;
+        color: black;}
+.content1 a:visited {
+  color: whitesmoke;
+}
+.content1 a:hover {
+  color:skyblue;
+}
+.content1 a:active {
+  color: grey;
+}
+.content1{display: flex;
+height: 88%;
+align-items: center;}
+.col{flex-basis: 10%;}
+.card4{width: 320px;
+height: 220px;
+display: inline-block;
+border-radius: 10px;
+padding: 15px 25px;
+background-size: contain;
+box-sizing: border-box;
+cursor: pointer;
+margin: 10px 15px;
+background-image: url(lawn.jpeg);
+background-repeat: no-repeat;
+}
+.card4 a{text-decoration: none;
+        color: black;}
+.card5{width: 320px;
+height: 220px;
+display: inline-block;
+border-radius: 10px;
+background-size: contain;
+padding: 5px 25px;
+box-sizing: border-box;
+cursor: pointer;
+margin: 10px 15px;
+background-image: url(homeapp.jpeg);
+background-repeat: no-repeat;
+}
+.card5 a{text-decoration: none;
+        color: black;}
+.card6{width: 320px;
+height: 220px;
+display: inline-block;
+border-radius: 10px;
+background-size: contain;
+padding: 4px 25px;
+box-sizing: border-box;
+cursor: pointer;
+margin: 10px 15px;
+background-image: url(mattress.jpeg) ;
+background-repeat: no-repeat;
+}
+.card6 a{text-decoration: none;
+        color: black;}
+.card8{width: 320px;
+height: 220px;
+display: inline-block;
+background-size: contain;
+border-radius: 10px;
+padding: 4px 25px;
+box-sizing: border-box;
+cursor: pointer;
+margin: 10px 15px;
+background-image: url(hiacc.jpeg) ;
+background-repeat: no-repeat;
+}
+.card8 a{text-decoration: none;
+        color: black;}
+.card12{width: 220px;
+height: 120px;
+display: inline-block;
+border-radius: 10px;
+padding: 15px 25px;
+background-size: contain;
+box-sizing: border-box;
+cursor: pointer;
+margin: 10px 15px;
+background-image: url(crime.jpeg);
+background-repeat: no-repeat;
+justify-content: space-between;
+}
+.card12 a{text-decoration: none;
+        color: black;}
+.card9{width: 220px;
+height: 120px;
+display: inline-block;
+border-radius: 10px;
+background-size: contain;
+padding: 5px 25px;
+box-sizing: border-box;
+cursor: pointer;
+margin: 10px 15px;
+background-image: url(fiction.jpeg);
+background-repeat: no-repeat;
+justify-content: space-between;
+}
+.card10 a{text-decoration: none;
+        color: black;}
+.card10{width: 220px;
+height: 120px;
+display: inline-block;
+border-radius: 10px;
+background-size: contain;
+padding: 4px 25px;
+justify-content: space-between;
+box-sizing: border-box;
+cursor: pointer;
+margin: 10px 15px;
+background-image: url(business.jpeg) ;
+background-repeat: no-repeat;
+}
+.card11 a{text-decoration: none;
+        color: black;}
+.card11{width: 220px;
+height: 120px;
+display: inline-block;
+background-size: contain;
+border-radius: 10px;
+padding: 4px 25px;
+box-sizing: border-box;
+justify-content: space-between;
+cursor: pointer;
+margin: 10px 15px;
+background-image: url(romance.jpeg) ;
+background-repeat: no-repeat;
+}
+.card9 a{text-decoration: none;
+        color: black;}
+.navbar .search-container input{background-color: white;
+color: black;
+margin-top: 10px;
+font-size:  19px; ;}
+.navbar .search-container button {
+float: right;
+padding: 13px;
+background: grey;
+display: inline;
+margin-top: 11px;
+margin-left: 2px;
+border-radius: 5%;
+position: relative;
+border: none;
+cursor: pointer;
+background-image: url(search.jpeg);
+background-repeat: no-repeat;
+background-size: 90%;
+background-position: 45%;
+}
+
+.navbar .search-container button:hover {
+  background: gray;
+}
+</style>
+</head>  
+<body>
+<div class="bg">
+    <div class="navbar">
+        <img src="whiteontp.jpeg" class="logo" alt="Company Logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Become a Seller</a></li>
+            <div class="dropdown">
+            <button class="dropbtn">JOBS</button>
+            <div class="dropdown-content">
+                <a href="#">Full Stack Developer</a>
+                <a href="#">Data Scientist</a>
+                <a href="#">Data Analyst</a>
+                <a href="#">Delivery Partner</a>
+                <a href="#">Cybersecurity Engineer</a>
+            </div class="dropdown">
+            </div class="dropdown-content">
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+        <div class="search-container">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"></button>
+        </div>
+    </div>
+</div>
+    <div class="content1">
+        <div class="col"></div>
+    <h1>Electronics</h1>
+    <br>
+    <div class="card1">
+    <a href="#"><h4>Mobiles</h4></a>
+    </div>
+    <div class="card2">
+    <a href="#"><h4>Laptops</h4></a>
+    </div>
+    <div class="card3">
+    <a href="#"><h4>Television</h4></a>
+    </div>
+    <div class="card7">
+    <a href="#"><h4>Headphones</h4></a>
+    </div>
+    <button type="button">See all</button>
+    </div>
+    <br>
+    <hr>
+    <div class="content1">
+    <div class="col"></div>
+    <h1>Home & KitchenAppliances</h1>
+    <br>
+    <div class="card4">
+    <a href="#"><h4>Garden</h4></a>
+    </div>
+    <div class="card5">
+    <a href="#"><h4>Appliances</h4></a>
+    </div>
+    <div class="card6">
+    <a href="#"><h4>Furniture</h4></a>
+    </div>
+    <div class="card8">
+    <a href="#"><h4>Home Improvement</h4></a>
+    </div>
+    <button type="button">See all</button>
+    </div>
+    <hr>
+    <div class="content1">
+        <div class="col"></div>
+        <h1>Books</h1>
+        <br>
+        <div class="card9">
+        <a href="#"><h4>Fiction</h4></a>
+        </div>
+        <div class="card10">
+        <a href="#"><h4>Business</h4></a>
+        </div>
+        <div class="card11">
+        <a href="#"><h4>Romance</h4></a>
+        </div>
+        <div class="card12">
+        <a href="#"><h4>Thriller</h4></a>
+        </div>
+        <button type="button">See all</button>
+        </div>
+</div>
+</body>    
+</html>

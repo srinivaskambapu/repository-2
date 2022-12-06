@@ -1,0 +1,48 @@
+body{
+    background-color: bisque;
+}
+h2 {
+    background-color: rgb(161, 151, 151);
+    color: rgb(15, 14, 14);
+    font-size: 28px;
+    font-style: oblique;
+    font-weight: 400;
+    padding: 2px;
+
+}
+h1 {
+    background-color: orange;
+    color: black;
+    font-size: 45px;
+    font-style: initial;
+    text-align: center;
+    padding: 5px;
+}
+a {
+   text-decoration: none;
+   color: yellow;
+   background-color: rgb(10, 33, 182);
+}
+h5{
+    display: inline;
+    background-color:red;
+    color: whitesmoke;
+    border: 3px solid #000;
+    margin: 10px 10px ;
+}  
+h4 {
+    display: inline;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+.RgNo{
+    background-color:yellow;
+    color: black;
+}
+.name{background-color: yellow;
+    color: black;
+}
+.IMP{
+    color: red;
+}

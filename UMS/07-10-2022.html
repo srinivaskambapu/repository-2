@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.header{background-color: black;
+padding: 15px;
+text-align: center;
+color:black;
+background-image: url(images.jpeg);
+background-size: 100%;}
+.topnav{overflow: hidden;
+background-color: black;}
+.topnav a{float: left;
+display: block;
+color: whitesmoke;
+text-align: center;
+padding: 25px;
+text-decoration: none;}
+.topnav a:hover{background-color: yellow;
+color:white;}
+.column{float: left;
+    width: 31%;
+    padding:14px;}
+.row:after {content:"";
+display: table;
+clear: both;}
+@media screen and (max-width:600px) {
+    .column{width:100%;}
+}
+.footer{text-align: right;
+font-size: smaller;
+overflow: hidden;}
+.popupbutton {
+  background-color: #5c788d;
+  color: white;
+  padding: 10px;
+  font-size: 10px;
+  border-style: dashed black 2px;
+}
+.popup {
+  display: inline-block;
+}
+.popup-content {
+  display: none;
+  background-color: whitesmoke;
+  min-width: 140px;
+  box-shadow: 0px 4px 10px 0px black;
+  z-index: 1;
+}
+.popup-content a {
+  color: black;
+  padding: 12px 14px;
+  text-decoration: none;
+  display: block;
+}
+.popup-content a:hover {background-color:white;}
+.popup:hover .popup-content {display: block;}
+.popup:hover .popupbutton {background-color: lightskyblue;}
+</style>
+</head>
+<body>
+<header>
+    <div class="header">
+    <h1>Job Finder</h1>
+    </div>  
+    </header>
+    <nav>
+    <h4>Jobs in different locations</h4>
+    <div class="topnav">
+    <a href="#">India</a>
+    <a href="#">America</a>
+    <a href="#">Canada</a>
+    </div>
+    </nav>
+    <hr>
+    <main>
+<h3>LPU</h3>
+<p>Select the preffered company for ur job</p>
+<div class="popup">
+  <button class="popupbutton">company</button>
+  <div class="popup-content">
+    <a href="www.google.com">Google</a>
+    <a href="www.amazon.in">Amazon</a>
+    <a href="www.apple.com">Apple</a>
+  </div>
+</div>
+    <div class="row">
+    <div class="column">
+        <h2>Job description in India</h2>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil hic, inventore voluptate corporis itaque molestiae unde necessitatibus suscipit ex iste voluptatem accusantium mollitia. Exercitationem ad amet illo voluptas. Cum, enim.
+    </div>
+    <div class="column">
+        <h2>Job description in America</h2>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolores quae sint libero, repellendus itaque odio vero provident harum ratione cupiditate voluptas eveniet, necessitatibus, ullam fugit mollitia praesentium voluptatibus neque!
+    </div>
+    <div class="column">
+        <h2>Job description in Canada</h2>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro iure blanditiis sunt, architecto aperiam, dolor voluptatum corrupti fugiat inventore ab eum asperiores, voluptas voluptatibus nemo molestiae doloribus. Dolorum, animi architecto.
+    </div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolore dicta molestias, voluptatum explicabo suscipit recusandae, sint perferendis illum architecto nulla voluptas temporibus mollitia ratione laudantium quis placeat vero consequuntur. Explicabo omnis eligendi aliquid maiores sapiente ut saepe, veritatis accusamus? Vel esse doloribus similique quis, ullam tenetur deserunt sequi eligendi voluptates libero assumenda nihil soluta, sapiente distinctio possimus obcaecati voluptatibus itaque accusantium dolore saepe veritatis magni. Expedita libero, beatae debitis eius iste cumque totam repellendus exercitationem, magnam, nihil labore ex quisquam! Numquam necessitatibus odio sequi. Voluptatum itaque earum pariatur quis, nemo aut reiciendis placeat ut quos maxime iure accusamus praesentium veritatis, libero possimus modi? Fugiat praesentium pariatur deserunt alias repellat inventore qui aspernatur ratione facere tempore quisquam fugit a provident odit, ipsa, error laborum ea porro earum aliquid eius iure laudantium? Nihil, id illo ducimus eaque dicta aperiam. Temporibus debitis deserunt inventore ipsam enim quaerat quo? Eligendi nam architecto quasi qui rerum ut quis aliquid laboriosam consectetur voluptatem dolor consequuntur at, unde odit cumque facilis. A, similique. Sint, aliquam inventore totam saepe aut deleniti doloremque? Dolorem doloremque, aliquam aperiam eveniet temporibus neque illo quod perspiciatis, saepe inventore cupiditate quas expedita sed corporis consequuntur eius. Ad, quod quibusdam omnis sint consequuntur eligendi vero ab hic veritatis asperiores qui cum vitae porro sit tenetur velit? Ea cumque natus ad explicabo quam. Sunt dignissimos esse delectus rerum amet nesciunt officia, nemo et placeat maxime est unde similique excepturi voluptatem ea quaerat totam aspernatur cum numquam.
+    <br>
+    <hr>
+    <footer>
+    <div class="footer">
+    <p>Ph.no:9999999999</p>
+    <p>email:helpline@gmail.com</p>
+    <p>linkedin:LPU</p>
+    </div>
+    </footer>
+</body>
+</html>
